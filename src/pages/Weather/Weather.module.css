@@ -1,0 +1,56 @@
+.section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-main);
+
+  .mainCard {
+    height: 60%;
+    min-height: 45rem;
+    width: 30%;
+    min-width: 29rem;
+    background-color: #ffffffd8;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--color-text-dark);
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      font-size: 2.4rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .weatherDescription {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .infoList {
+      font-weight: 500;
+      font-size: 2rem;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      list-style: none;
+      width: 95%;
+      min-width: 24.5rem;
+
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        gap: 1rem;
+      }
+    }
+  }
+}

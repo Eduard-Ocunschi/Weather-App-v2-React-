@@ -1,0 +1,38 @@
+.sectionForecast {
+  background-color: #ececec;
+  .dateContainer {
+    text-align: center;
+
+    .dateTitle {
+      color: var(--color-text-dark);
+      font-size: x-large;
+      margin: 1rem 0;
+    }
+
+    .hourContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      gap: 3rem;
+    }
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1160px) {
+  .sectionForecast .dateContainer .hourContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .sectionForecast .dateContainer .hourContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionForecast .dateContainer .hourContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
