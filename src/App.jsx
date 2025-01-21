@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NavigationBar from "./components/NavigationBar/NavigationBar";
-
+import NavigationBar from "./components/navigationBar/NavigationBar";
 import PageNotFound from "./pages/PageNotFound";
 import { NavigationUIProvider } from "./contexts/NavigationUIContext";
 import { WeatherAPIProvider } from "./contexts/WeatherAPIContext";
